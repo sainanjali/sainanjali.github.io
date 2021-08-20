@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contact{
+    position: relative;
+}
+#contact h1{
+    font-size: 3.5rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../environmental-protection.webp') no-repeat center center/cover;
+}
+#contact-box{
+    /* display: flex;    */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+    margin-left: 350px;
+    margin-right: 350px;
+    
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.0rem;
+}
+.btn{
+    padding: 7px 50px;
+    border: 2px solid indianred;
+    background-color: lightcoral;
+    border-radius: 30px;
+    margin-left: 560px;
+    
+    font-size: 1.4rem;
+    font-family: 'Akaya Kanadaka', cursive;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <hr>
+        <div id="contact-box">
+            <form action=""></form>
+            <div class="form-grp">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-grp">
+                <label for="name">Contact No.</label>
+                <input type="Contact" name="name" id="Contact" placeholder="Enter Your Contact no.">
+            </div>
+
+            <div class="form-grp">
+                <label for="name">Email</label>
+                <input type="Email" name="name" id="Email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-grp">
+                <label for="name">Location</label>
+                <input type="Location" name="name" id="Location" placeholder="Enter Your Location">
+            </div>
+
+
+            <div class="form-grp">
+                <label for="name">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </section>
+    
+        <button class="btn"><a href="index.html"> SUBMIT</a>
+           
+
+        </button>
+    
+</body>
+</html>

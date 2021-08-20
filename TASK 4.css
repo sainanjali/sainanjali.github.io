@@ -1,0 +1,198 @@
+/* css Reset */
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+/* css variables */
+:root{
+    --navbar-height: 60px;
+}
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/*Navigation bar: Logo and Image */
+
+#logo{
+margin: 10px 34px;
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 60px;
+    
+}
+
+/*Navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(34 62 70);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: rgb(245, 235, 237);
+    display: block;
+padding: 3px 22px;
+border-radius: 10px;
+text-decoration: none;
+font-family: 'Akaya Kanadaka', cursive;
+font-family: 'Bree Serif', serif;
+font-family: 'Merriweather', serif;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(132, 230, 119);
+   
+
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../FOREST bg img.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.90;
+
+}
+#home h1{
+    color: rgb(7, 8, 7);
+    text-align: center;
+   
+}
+
+#home p{
+    color: rgb(17, 10, 10);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Akaya Kanadaka', cursive;
+font-family: 'Merriweather', serif;
+
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(176 228 216);
+
+}
+#services .box img{
+   width: 100px;
+   margin: auto;
+   display: block;
+   height: 200px;
+   width: 300px;
+   border-radius: 23px;
+  
+}
+/* Animal-section */
+#Animal-section{
+    height: 400px;
+    font-size: 2.5rem;
+    
+    
+
+}
+
+#Animal-section::before{
+    content: "";
+    position: absolute;
+    background: url('../animal.webp')  no-repeat center center/cover;
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#Animal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Animal-item{
+    padding: 35px;
+}
+#Animal img{
+    height: 125px;
+}
+
+
+
+footer{
+    background: black;
+    color: blanchedalmond;
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Merriweather', serif;
+}
+.h-secondary{
+    font-size: 2.6rem;
+    padding: 12px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+.btn{
+    padding: 7px 50px;
+    border: 2px solid indianred;
+    background-color: lightcoral;
+    border-radius: 30px;
+    margin: 17px;
+    font-size: 1.4rem;
+    font-family: 'Akaya Kanadaka', cursive;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+font-family: 'Merriweather', serif;
+
+}
+
